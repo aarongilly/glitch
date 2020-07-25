@@ -20,8 +20,8 @@ const Url = mongoose.model("Url", urlSchema);
 
 var createAndSaveUrl = function(done) {
   var mySite = new Url({
-    url: "http://www.aarongilly.com",
-    num: 1
+    url: "http://www.aarongilly.com/creations",
+    num: 2
   });
   mySite.save(function(err, data) {
     if (err) return console.error(err);
